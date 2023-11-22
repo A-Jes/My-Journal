@@ -2,7 +2,7 @@ import React from "react"
  function handleChange(event) {
         const {name, value} = event.target
         setMeme(prevMeme => ({
-          prevMeme,
+          ...prevMeme,
             [name]: value,
         }));
     }
